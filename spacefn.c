@@ -202,7 +202,7 @@ static void state_decide(void) {    // {{{2
         }
     }
 
-    printf("timed out\n");
+    /* printf("timed out\n"); */
     for (int i=0; i<n_buffer; i++) {
         unsigned int code = key_map(buffer[i]);
         if (!code)
@@ -244,7 +244,7 @@ static void state_shift(void) {
 
 static void run_state_machine(void) {
     for (;;) {
-        printf("state %d\n", state);
+        /* printf("state %d\n", state); */
         switch (state) {
             case IDLE:
                 state_idle();
