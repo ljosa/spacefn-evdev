@@ -17,22 +17,24 @@ unsigned int key_map(unsigned int code) {
         case KEY_BRIGHTNESSDOWN:    // my magical escape button
             exit(0);
 
-        case KEY_J:
+        case KEY_H:
             return KEY_LEFT;
-        case KEY_K:
+        case KEY_J:
             return KEY_DOWN;
-        case KEY_L:
+        case KEY_K:
             return KEY_UP;
-        case KEY_SEMICOLON:
+        case KEY_L:
             return KEY_RIGHT;
 
-        case KEY_M:
+        case KEY_U:
             return KEY_HOME;
-        case KEY_COMMA:
+        case KEY_M:
             return KEY_PAGEDOWN;
-        case KEY_DOT:
+        case KEY_COMMA:
             return KEY_PAGEUP;
-        case KEY_SLASH:
+        case KEY_I:
+            return KEY_INSERT;
+        case KEY_O:
             return KEY_END;
 
         case KEY_B:
