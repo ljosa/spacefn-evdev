@@ -45,6 +45,8 @@ unsigned int key_map(unsigned int code) {
 
 // Blacklist keys for which I have a mapping, to try and train myself out of using them
 int blacklist(unsigned int code) {
+     return 0;
+
     switch (code) {
         case KEY_UP:
         case KEY_DOWN:
