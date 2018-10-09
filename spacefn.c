@@ -133,6 +133,15 @@ static int read_one_key(struct input_event *ev) {
     if (blacklist(ev->code))
         return -1;
 
+    switch (ev->code) {
+    case KEY_LEFTCTRL:
+         ev->code = KEY_LEFTMETA;
+         break;
+    case KEY_CAPSLOCK:
+         ev->code = KEY_LEFTCTRL;
+         break;
+    }
+
     return 0;
 }
 
